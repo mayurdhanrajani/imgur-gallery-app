@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_top_corners_background"
+    android:padding="@dimen/SIZE_24DP">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivNoInternet"
+        android:layout_width="@dimen/SIZE_80DP"
+        android:layout_height="@dimen/SIZE_80DP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_no_internet" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNoInternetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/SIZE_12DP"
+        android:fontFamily="@font/font_medium"
+        android:gravity="center"
+        android:text="@string/no_internet"
+        android:textColor="@color/text_color_one"
+        android:textSize="@dimen/SIZE_18SP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivNoInternet" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNoInternetSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/SIZE_12DP"
+        android:fontFamily="@font/font_regular"
+        android:gravity="center"
+        android:text="@string/no_internet_message"
+        android:textColor="@color/text_color_two"
+        android:textSize="@dimen/SIZE_14SP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNoInternetTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/SIZE_8DP"
+        android:layout_marginTop="@dimen/SIZE_32DP"
+        android:layout_marginEnd="@dimen/SIZE_8DP"
+        android:fontFamily="@font/font_medium"
+        android:padding="@dimen/SIZE_16DP"
+        android:text="@string/ok"
+        android:textColor="@color/text_color_three"
+        android:textSize="@dimen/SIZE_14SP"
+        app:backgroundTint="@color/button_color"
+        app:cornerRadius="@dimen/SIZE_24DP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNoInternetSubtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="ok">OK</string>
+    <string name="no_internet">No Internet!</string>
+    <string name="no_internet_message">Please connect to the internet\n and try again</string>
+    <string name="no_image">No Image found!</string>
+    <string name="empty_search_message">Click on the Search icon to start searching</string>
+    <string name="empty_data_message">No images found based on the search</string>
+    <string name="search">Search</string>
+    <string name="search_image_message">Search images…</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+</resources>
